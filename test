@@ -1,0 +1,12 @@
+provider "aws" {
+  region     = "ap-south-1"
+  access_key = "AKIA4G5EPJMGTWQ5SYFD"
+  secret_key = "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"
+}
+
+#create an ec2 instance named as siva and instance type as t2.micro
+
+resource "aws_instance" "myec2" {
+   ami = "ami-082b5a644766e0e6f"
+   instance_type = "t2.micro"
+}}
